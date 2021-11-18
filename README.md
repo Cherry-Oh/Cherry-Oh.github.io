@@ -19,24 +19,44 @@ For this guide, our target OS is Kali Linux 20.X...
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 sudo python2.7 get-pip.py
 ```
+   > You can use pip2 that's already pre-installed
 
 ### 2. Install & Run:
 - Download latest drozer release (drozer-2.4.4-py2-none-any.whl) from [drozer_releases](https://github.com/FSecureLABS/drozer/releases)
-- Install drozer
+- Install drozer:
 ```markdown
 pip2.7 install drozer-2.4.4-py2-none-any.whl
+OR
+pip2 install drozer-2.4.4-py2-none-any.whl
 ```
-- Run drozer
+- Run drozer:
 
-| ![alt text](https://github.com/Cherry-Oh/Cherry-Oh.github.io/blob/main/drozer_run.png?raw=true) |
-|:--:|
-| <b>*drozer has been installed successfully:blush:*</b>|
+   | ![alt text](https://github.com/Cherry-Oh/Cherry-Oh.github.io/blob/main/drozer_run.png?raw=true) |
+   |:--:|
+   | <i>drozer has been installed successfully:blush:</i>|
 
-![alt text](https://github.com/Cherry-Oh/Cherry-Oh.github.io/blob/main/drozer_run.png?raw=true)
- >   *drozer has been installed successfully:blush:*
+- Let's explore drozer options:
+   > *drozer console [command]* : This option connects to an Agent and allows you to interact with the system from the context of the agent application on the device
+
+   ![alt text](https://github.com/Cherry-Oh/Cherry-Oh.github.io/blob/main/drozer_connect.png?raw=true)
+   
+   > But we get an error about a dependency *Twisted* :thinking:
+   
+   From the list of [prerequisites](https://github.com/FSecureLABS/drozer#prerequisites) we installed above, Twisted was one and was installed via pip.
+   Re-installing it as suggested on the image above unfortunately did not do the trick for me.
+   
+   Now What??
+   
+   After a few digging here and there, the commands below worked :raised_hands:
+   ```markdown
+   pip install --upgrade setuptools
+   pip2 install twisted
+   ```
+   > pip and pip2 were already pre-installed in Kali
 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+
 
 ```markdown
 Syntax highlighted code block
