@@ -10,7 +10,7 @@ For this guide, our test OS was **Kali Linux 2021.3**
 ## Let's get to business...
  | ![Alt Text](https://media.giphy.com/media/1qPQfteuMNBqRyr4yH/giphy.gif) |
  |:--:|
- | <i><b>giphy.com:</b></i>|
+ |<i><b>giphy.com</b></i>|
 
 
 ### 1. Prerequisites:
@@ -47,7 +47,7 @@ pip2 install drozer-2.4.4-py2-none-any.whl
    From the list of [prerequisites](https://github.com/FSecureLABS/drozer#prerequisites) we installed above, Twisted was one and was installed via pip.
    Re-installing it as suggested on the image above unfortunately did not do the trick for me.
    
-   #### Now What??
+   ### Now What??
    
    After a few digging here and there, the commands below worked :raised_hands:
    ```markdown
