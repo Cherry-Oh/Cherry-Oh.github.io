@@ -1,4 +1,4 @@
-# Drozer Installation ( Twisted Fix )
+# Drozer Installation ( Twisted Fixed! )
 Welcome to my first writeup!! Briefly about me - I am a mobile security enthusiast, researcher and a comedy fan:blush:
 
 We'll go through a step by step guide on installing drozer on Kali/Ubuntu, a dependency (Twisted) challenge encountered and a solution.
@@ -8,10 +8,7 @@ Drozer is a framework developed by [F-Secure Labs](https://labs.f-secure.com/too
 For this guide, our test OS was **Kali Linux 2021.3**
 
 ## Let's get to business...
- | ![Alt Text](https://media.giphy.com/media/1qPQfteuMNBqRyr4yH/giphy.gif) |
- |:--:|
- |<i><b>giphy.com</b></i>|
-
+ ![Alt Text](https://media.giphy.com/media/1qPQfteuMNBqRyr4yH/giphy.gif)
 
 ### 1. Prerequisites:
 - Install dependencies from [drozer_prerequisites](https://github.com/FSecureLABS/drozer#prerequisites)
